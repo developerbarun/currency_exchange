@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 40vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333333;
+  text-align: center;
+}
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #f2f2f2;
+}
+
+form input {
+  border: 1px solid #dddddd;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+  border-radius: 0.25rem;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.select-container select {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.msg {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+form button {
+  height: 3rem;
+  background-color: #42a5f5;
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #1e88e5;
+}
+
+.amount input {
+  width: calc(100% - 20px); 
+}
+
+.amount input::-webkit-inner-spin-button,
+.amount input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 60vw;
+  }
+
+  .dropdown {
+    flex-direction: row;
+  }
+
+  .select-container {
+    width: auto;
+    margin-top: 0;
+  }
+}
